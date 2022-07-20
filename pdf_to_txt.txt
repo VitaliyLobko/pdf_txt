@@ -1,0 +1,2047 @@
+DCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ 
+ 
+ 
+ 
+   
+DCS: ОГНЕВОЙ РУБЕЖ
+ 
+0  EAGLE DYNAMICS 
+Руководство пользователя 
+ 
+DCS FIRMING LINE
+ 
+ 
+ 
+ 
+ 
+   
+DCS: FIRING LINE
+ 
+0 EAGLE DYNAMICS
+User's manualDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ВВЕДЕНИЕ  
+Благодарим вас за приобретение симулятора DCS: Огневой рубеж. Данный модуль 
+расширяет тактический элемент в мире DCS, позволяя игрокам командовать всеми 
+воздушными и сухопутными силами, включая системы ведения огня с закрытых позиций 
+(артиллерия и РСЗО). Управление войсками осуществляется с помощью тактической карты, 
+посредством которой игрок задает маршруты дружественным подразделениям, 
+устанавливает правила открытия огня, выбирает боевой порядок и т.д.  
+Используя тактическую карту, вы можете управлять авиацией и одновременно 
+командовать наземными войсками.  
+Также в DCS: Огневой рубеж введена возможность управлять большинством боевых 
+машин от первого лица: непосредственно взять управление на себя и самостоятельно 
+вести огонь, в том числе из пушек, пулеметов, а также запускать и наводить 
+противотанковые ракеты.  
+В многопользовательском режиме игроки могут управлять передовым авиационным 
+наводчиком (ПАН) с обзором через бинокль, с помощью которого можно выдавать 
+целеуказание для других игроков посредством дыма, лазерного и инфракрасного 
+целеуказателей. 
+В модулей реализован так называемый "туман войны", при котором на карте 
+отображаются только те юниты противника, которые непосредственно наблюдаются 
+вашими силами. 
+Надеемся, вам понравятся нововведения, которые модуль Огневой рубеж привносит на 
+поле боя DCS World. 
+ 
+Коллектив разработчиков Eagle Dynamics 
+12 июня, 2013 года 
+ 
+   
+1  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+INTRODUCTION
+Thank you for purchasing DCS Simulator: Firing Line. This module
+expands the tactical element in the DCS world, allowing players to command all
+air and ground forces, including indirect fire systems
+(artillery and MLRS). Troops are controlled using a tactical map,
+by means of which the player sets routes for friendly units,
+establishes the rules for opening fire, chooses the order of battle, etc.
+Using a tactical map, you can control aircraft and at the same time
+command ground forces.
+Also in DCS: Firing Line, the ability to control most combat
+machines in first person: directly take control and independently
+fire, including from cannons, machine guns, as well as launch and aim
+anti-tank missiles.
+In multiplayer mode, players can control advanced aircraft
+gunner (PAN) with a view through binoculars, with which you can issue
+target designation for other players through smoke, laser and infrared
+target designators.
+The modules implemented the so-called "fog of war", in which the map
+only those enemy units that are directly observed are displayed
+by your powers.
+We hope you enjoy the innovations that the Firing Line module brings to
+battlefield DCS World.
+ 
+Eagle Dynamics Development Team
+June 12, 2013
+ 
+   
+1 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+СОДЕРЖАНИЕ 
+ВВЕДЕНИЕ ............................................................................................................................................... 1 
+СОДЕРЖАНИЕ ......................................................................................................................................... 2 
+РЕДАКТОР МИССИЙ................................................................................................................................ 3 
+УПРАВЛЕНИЕ ЮНИТАМИ ............................................................................................................................ 3 
+УПРАВЛЯЕМЫЙ ЮНИТ ............................................................................................................................... 5 
+ВЫБОР РОЛИ И КОАЛИЦИИ ПОСЛЕ ЗАПУСКА МИССИИ ...................................................................................... 6 
+ИГРОВЫЕ ОПЦИИ.................................................................................................................................... 7 
+ВКЛАДКА ИГРОВЫЕ ................................................................................................................................ 7 
+МЕНЮ ОСОБЫЕ..................................................................................................................................... 8 
+ТАКТИЧЕСКАЯ КАРТА ............................................................................................................................ 10 
+ИГРА ЗА ОВ КОМАНДИРА ..................................................................................................................... 12 
+КОМАНДНАЯ ПАНЕЛЬ.............................................................................................................................. 12 
+ПЕРЕМЕЩЕНИЕ ЮНИТОВ.......................................................................................................................... 15 
+КОМАНДОВАНИЕ НАЗЕМНЫМИ ПОДРАЗДЕЛЕНИЯМИ ОТ ПЕРВОГО ЛИЦА ...................................... 17 
+ВЫБОР ЮНИТА ...................................................................................................................................... 17 
+УПРАВЛЕНИЕ ТЕХНИКОЙ .......................................................................................................................... 17 
+УПРАВЛЕНИЕ ПЕРЕДВИЖЕНИЕМ ГРУППЫ ..................................................................................................... 19 
+УПРАВЛЕНИЕ ГРУППОЙ ПОСРЕДСТВОМ РАДИОКОМАНД .................................................................................. 20 
+УПРАВЛЕНИЕ БАШНЕЙ ............................................................................................................................. 21 
+ВЫБОР ОРУЖИЯ ..................................................................................................................................... 21 
+ПОПОЛНЕНИЕ БОЕПРИПАСОВ ................................................................................................................... 21 
+ПРИМЕНЕНИЕ ОРУЖИЯ ........................................................................................................................ 22 
+ПУЛЕМЕТЫ, АВТОМАТИЧЕСКИЕ ПУШКИ, ЗЕНИТНЫЕ ОРУДИЯ ............................................................................ 22 
+ГЛАВНОЕ ОРУДИЕ ................................................................................................................................... 23 
+ЛАЗЕРНЫЙ ДАЛЬНОМЕР И БАЛЛИСТИЧЕСКИЙ ВЫЧИСЛИТЕЛЬ .......................................................................... 25 
+УПРАВЛЯЕМОЕ ОРУЖИЕ ........................................................................................................................... 28 
+ПУЛЬТ УПРАВЛЕНИЯ ЗРК “ТОР” ................................................................................................................ 30 
+ИГРА ЗА ПУАН ....................................................................................................................................... 32 
+КОМАНДЫ ПУАН .................................................................................................................................. 35 
+ПРИМЕНЕНИЕ АРТИЛЛЕРИИ И РСЗО .................................................................................................... 36 
+СТРЕЛЬБА С ЗАКРЫТЫХ ОГНЕВЫХ ПОЗИЦИЙ ОТ ПЕРВОГО ЛИЦА ........................................................................ 38 
+ИГРА ЗА КОМАНДУЮЩЕГО АВИАЦИЕЙ............................................................................................... 39 
+УСТАНОВКА МАРШРУТА ПОЛЕТА ................................................................................................................ 39 
+ЦЕЛЕУКАЗАНИЕ...................................................................................................................................... 40 
+2  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+CONTENT
+INTRODUCTION ............................................... ................................................. ............................................ one
+CONTENT ................................................. ................................................. ...................................... 2
+MISSION EDITOR.................................................... ................................................. ............................... 3
+UNITS MANAGEMENT .................................................. ................................................. ......................... 3
+CONTROLLED UNIT .................................................. ................................................. ............................. 5
+SELECTION OF ROLE AND COALITION AFTER MISSION LAUNCHES .............................................................. ................................................... 6
+GAME OPTIONS.................................................... ................................................. ................................. 7
+GAME TAB .................................................. ................................................. ............................... 7
+MENU SPECIAL ............................................... ................................................. ................................... eight
+TACTICAL MAP ................................................... ................................................. .......................... ten
+GAME AS A COMMANDER .............................................. ................................................. ..................... 12
+COMMAND PANEL................................................... ................................................. ............................ 12
+MOVING UNITS............................................................... ................................................. ........................ fifteen
+FIRST-PERSON COMMAND OF GROUND UNITS .............................................................. 17
+UNIT SELECTION .................................................. ................................................. .................................... 17
+MANAGEMENT OF TECHNOLOGY .................................................. ................................................. ......................... 17
+GROUP MOVEMENT MANAGEMENT ............................................................... ................................................. .... 19
+GROUP CONTROL VIA RADIO COMMANDS .............................................................. .................................... twenty
+TOWER CONTROL .............................................................. ................................................. ...................... 21
+WEAPON SELECTION .................................................. ................................................. ................................... 21
+AMMUNITION REPLENISHMENT ............................................... ................................................. ................. 21
+USE OF WEAPONS .............................................................. ................................................. ...................... 22
+MACHINE GUNS, AUTOMATIC GUNS, ANTI-AIRCAST GUNS .............................................................. ................................. 22
+MAIN WEAPON .................................................. ................................................. ................................. 23
+LASER RANGEFINDER AND BALLISTIC COMPUTER .................................................................. .............................. 25
+GUIDED WEAPON .............................................................. ................................................. ......................... 28
+CONTROL PANEL OF ADMS “TOR” .............................................. ................................................. .................. thirty
+GAME FOR THE POINT ............................................... ................................................. ...................................... 32
+PUAN TEAM .................................................. ................................................. ................................... 35
+USE OF ARTILLERY AND MLRS .............................................................. ................................................. .... 36
+FIRST-PERSON SHOOTING FROM CLOSED FIRE POSITIONS ............................................ ............................. 38
+GAME FOR THE COMMANDER OF AVIATION .............................................................. ................................................. 39
+SETTING THE FLIGHT ROUTE .......................................................... ................................................. ............... 39
+TARGET .................................................................. ................................................. ................................... 40
+2 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+РЕДАКТОР МИССИЙ 
+Управление юнитами 
+В DCS: Огневой рубеж на панель инструментов редактора миссий была введена новая 
+кнопка - "Управление юнитами": 
+Управление юнитами  
+ 
+ 
+ 
+ 
+Рисунок 1. Кнопка "Управление юнитами"  
+При нажатии на кнопку откроется панель "Управление юнитами". Данная панель 
+позволяет задать роль игрока в миссии.  
+ 
+3  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+MISSION EDITOR
+Unit Management
+In DCS: Firing Line, a new
+button - "Manage units":
+Unit Management
+ 
+ 
+ 
+ 
+Figure 1. Button "Manage units"
+When you click on the button, the "Unit Management" panel will open. This panel
+allows you to set the role of the player in the mission.
+ 
+3 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ 
+Рисунок 2. Назначение ролей  
+ПИЛОТ УПРАВЛЯЕТ ЮНИТАМИ. Этот флажок включает/выключает возможность для 
+игрока, управляющего ЛА, командовать всеми наземными единицами с помощью 
+тактической карты (F10) прямо во время миссии. При создании миссии для одного игрока 
+вы, возможно, захотите воспользоваться этой функцией. Данная опция позволяет игроку 
+отдавать приказы наземным юнитам через карту F10, находясь в кабине ЛА. 
+РОЛИ В МНОГОПОЛЬЗОВАТЕЛЬСКОМ РЕЖИМЕ ИГРЫ (КРАСНЫЕ, СИНИЕ). В этой таблице 
+можно настроить количество позиций для игроков в миссии для каждой из следующих 
+ролей обеих сторон: 
+Инструктор. Может как вести наблюдение, работать в качестве ПАН, командовать ЛА и 
+наземной техникой обеих сторон. Инструктор видит все войска. Играя за Инструктора, 
+можно динамично изменять наземное поле боя во время миссии. Эту роль стоит 
+использовать для управления и контроля за силами обеих коалиций. На инструктора не 
+действуют ограничения “тумана войны”, он видит все юниты независимо от их 
+расположения. 
+Примечание: Хотя роль Инструктора может быть задана для игрока любой коалиции, 
+между ними отсутствует принципиальная разница – инструктор всегда контролируют 
+боевые единицы обеих сторон. 
+Общевойсковой командир (ОВ Командир). Командует воздушными и наземными 
+юнитами, включая артиллерию. Также есть возможность командовать от первого лица 
+наземной техникой, в том числе выполнять задачи ПАН. 
+ПУАН. Пункт управления авиационного наводчика. Управляет от первого лица наземной 
+техникой, в том числе выполняет задачи ПАН, но не имеет возможности командовать 
+наземными и воздушными силами. 
+Наблюдатель. Не может действовать как ПАН или ОВ Командир, однако имеет 
+неограниченные возможности в наблюдении за юнитами обеих коалиций. 
+ 
+4  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+ 
+Figure 2. Role assignment
+THE PILOT CONTROLS THE UNITS. This checkbox enables/disables the ability to
+the player controlling the aircraft, to command all ground units using
+tactical map (F10) right during the mission. When creating a single player mission
+you might want to use this feature. This option allows the player
+give orders to ground units through the F10 map while in the aircraft cockpit.
+ROLES IN MULTIPLAYER GAME MODE (RED, BLUE). In this table
+you can adjust the number of positions for players in a mission for each of the following
+roles of both parties:
+Instructor. Can both conduct surveillance, work as a PAN, command an aircraft and
+ground equipment of both sides. The instructor sees all troops. Playing as Instructor
+you can dynamically change the ground battlefield during the mission. This role is worth
+used to manage and control the forces of both coalitions. Not for an instructor
+Fog of War restrictions apply, it sees all units regardless of their
+location.
+Note: Although the Instructor role can be assigned to a player of any coalition,
+there is no fundamental difference between them - the instructor always controls
+combat units on both sides.
+Combined Arms Commander (OV Commander). Commands air and ground
+units, including artillery. It is also possible to command in the first person
+ground equipment, including performing the tasks of the PAN.
+PUAN. Aviation gunner's control point. Controls from the first person ground
+equipment, including performing the tasks of the PAN, but does not have the ability to command
+ground and air forces.
+Observer. Cannot act as PAN or OV Commander, but has
+unlimited possibilities in monitoring the units of both coalitions.
+ 
+4 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Управляемый юнит 
+В панели “Группа техники” присутствует опция "Управляемый юнит", которая позволяет 
+игроку управлять юнитами или группами юнитов. Если опция отключена, игрок не сможет 
+управлять юнитами посредством тактической карты или от первого лица. 
+Управляемый юнит 
+ 
+ 
+ 
+Рисунок 3. Управляемый юнит 
+По умолчанию эта опция включена для всех юнитов, которыми можно управлять в DCS. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+controlled unit
+In the panel “Group of vehicles” there is an option “Controlled unit”, which allows you to
+the player to control units or groups of units. If this option is disabled, the player will not be able to
+control units through a tactical map or from the first person.
+controlled unit
+ 
+ 
+ 
+Figure 3. Managed unit
+By default, this option is enabled for all units that can be controlled in DCS.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Выбор роли и коалиции после запуска миссии 
+Запустив миссию, необходимо выбрать роль, которую вы хотели бы отыграть. В случае, 
+если в миссии доступны роли для обеих коалиций, отобразится окно выбора коалиции. В 
+данном окне вы также можете выбрать нейтральную сторону – наблюдатели. 
+ 
+ 
+Рисунок 4. Окно выбора коалиции 
+ 
+После выбора коалиции откроется окно со списком доступных ролей. Выберете роль и 
+нажмите кнопку ОК для начала миссии.  
+ 
+ 
+Рисунок 5. Окно выбора роли 
+6  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Role and coalition selection after mission launch
+Having launched the mission, you must select the role that you would like to play. When,
+if roles for both coalitions are available in the mission, the coalition selection window will be displayed. AT
+In this window, you can also choose the neutral side - observers.
+ 
+ 
+Figure 4. Coalition selection window
+ 
+After selecting a coalition, a window with a list of available roles will open. Choose a role and
+press the OK button to start the mission.
+ 
+ 
+Figure 5. Role selection window
+6 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ИГРОВЫЕ ОПЦИИ  
+Вкладка ИГРОВЫЕ 
+В DCS: Огневой рубеж можно включить опцию ТУМАН ВОЙНЫ, при этом на карте будут 
+отображаться только те юниты противника, которые были обнаружены дружественными 
+войсками. Необнаруженные юниты не будут отображаться на тактической карте. В случае 
+если юнит противника выходит из зоны обзора ваших юнитов, его значок пропадает с 
+карты. Для включения “тумана войны” задействуйте соответствующую опцию в категории 
+НАСТРОЙКИ ВИДА меню настроек ИГРОВЫЕ. 
+Даже при включенной опции ТУМАН ВОЙНЫ, игроки с ролью Инструктора и Наблюдателя 
+будут видеть все юниты, участвующие в миссии. 
+При включении опции ВСЕ, на тактической карте будут отображаться все юниты 
+независимо от роли игрока. 
+ 
+Опция ТУМАН ВОЙНЫ 
+Рисунок 6. Меню настроек ИГРОВЫЕ  
+ 
+ 
+7  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+GAME OPTIONS
+GAME tab
+In DCS: Firing Line, you can turn on the FOG OF WAR option, while the map will have
+only those enemy units that were detected by friendly ones are displayed
+troops. Undiscovered units will not be displayed on the tactical map. When
+if an enemy unit moves out of your units' line of sight, its icon disappears with
+cards. To enable the "fog of war" activate the appropriate option in the category
+SETTINGS OF THE VIEW of the settings menu GAME.
+Even with the FOG OF WAR option enabled, Instructor and Observer players
+will be seen by all units participating in the mission.
+When the ALL option is enabled, all units will be displayed on the tactical map
+regardless of the role of the player.
+ 
+FOG OF WAR option
+Figure 6. GAME settings menu
+ 
+ 
+7 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Меню ОСОБЫЕ 
+Перейдя в меню настроек ОСОБЫЕ, а затем на вкладку Огн. Рубеж, вы может настроить 
+специальные опции модуля Огневой рубеж.  
+Рисунок 7. Меню настроек ОСОБЫЕ – вкладка Огневой рубеж 
+Вычислить огневое решение. После захвата цели на экран отобразится круглая метка, 
+обозначающая точку упреждения. Совместите прицел с центром метки упреждения для 
+увеличения шансов поражения цели. Огневое решение вычисляется для стрельбы из 
+пулеметов/пушек как по наземным, так и воздушным целям. 
+Метка упреждения 
+стрельбы 
+ 
+ 
+Тряска платформы. Во время движения наземная техника испытывает колебания и тряску, 
+что приводит к колебанию и тряске поля зрения игрока. Эта опция включает тряску 
+платформы, на виде от первого лица. 
+Информация о цели. Когда цель захвачена, ее принадлежность и дальность отображаются 
+в нижнем левом углу экрана на виде от первого лица. 
+8  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Menu SPECIAL
+By going to the SPECIAL settings menu, and then to the Fire tab. frontier, you can customize
+special options of the Firing Line module.
+Figure 7. SPECIAL settings menu - Firing line tab
+Calculate the firing solution. After the target is locked, a round mark will be displayed on the screen,
+denoting a point of departure. Align the scope with the center of the lead marker to
+increase the chances of hitting the target. The firing decision is calculated for firing from
+machine guns / cannons for both ground and air targets.
+Lead label
+shooting
+ 
+ 
+Platform shake. During the movement, ground equipment experiences vibrations and shaking,
+which causes the player's field of view to wobble and shake. This option enables shaking
+platforms, in first-person view.
+Target information. When a target is locked, its ownership and range are displayed
+in the lower left corner of the screen in first-person view.
+8 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Информация о цели 
+ 
+ 
+Фиксировать шасси. При включении этой опции, компас, расположенный в правом 
+верхнем углу, вращается и показывает курс корпуса машины. Символ корпуса при этом 
+неподвижен и направлен вверх. 
+ 
+Фиксировать башню. При включении этой опции, компас вращается и показывает курс 
+башни/командирской башенки. Символ башни неподвижен и направлен вверх. 
+ 
+Фиксировать шкалу компаса. При включении этой опции, шкала компаса остается 
+неподвижна, однако символы корпуса и башни будут вращаться. 
+ 
+   
+9  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Target Information
+ 
+ 
+Fix the chassis. When this option is enabled, the compass located on the right
+upper corner, rotates and shows the course of the machine body. The body symbol
+immobile and directed upwards.
+ 
+Fix tower. When this option is enabled, the compass rotates and shows the heading
+turret/commander's cupola. The tower symbol is stationary and points up.
+ 
+Fix the compass scale. When this option is enabled, the compass scale remains
+is stationary, but the hull and turret symbols will rotate.
+ 
+   
+9 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ТАКТИЧЕСКАЯ КАРТА 
+После запуска миссии и нажатия на клавишу [F10] вы попадете на карту театра военных 
+действий (ТВД), на которой отмечены все дружественные, а также обнаруженные 
+вражеские юниты. Данная карта также называется тактической. 
+С помощью тактической карты можно контролировать поле боя, выбирать юниты, 
+задавать маршруты дружественных сил, устанавливать правила открытия огня, выбирать 
+построение и многое другое. Синие тактические значки обозначают юнитов, 
+принадлежащих синей коалиции, красные – соответственно красной коалиции. 
+Выбранные юниты отображаются желтыми значками.   
+ 
+Координаты курсора  Дата/время игры и ускорение времени 
+     
+Взять управление 
+Добавить метку 
+ 
+Показать все маршруты 
+Показать лайфбар 
+ 
+Показать все цели  Центр на ЛА игрока 
+ 
+ 
+Зоны обнаружения  Нормальный 
+   масштаб 
+ 
+Зоны поражения  
+  Уменьшение 
+масштаба 
+Ярлыки объектов 
+ 
+Увеличение 
+Измерение расстояния  масштаба 
+   
+Опции отображения 
+карты 
+ 
+  
+Рисунок 8. Тактическая карта 
+Сверху над экраном располагается панель инструментов со следующими 
+функциональными кнопками (слева направо): 
+Координаты курсора. При перемещении мыши в этом поле отображаются географические 
+координаты текущей позиции курсора. 
+Взять управление. При нажатии на эту кнопку вы переходите в управление от первого 
+лица выбранным юнитом.  
+10  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+TACTICAL MAP
+After starting the mission and pressing the [F10] key, you will be taken to the map of the theater of war
+actions (TVD), on which all friendly, as well as detected
+enemy units. This card is also called tactical.
+With the help of a tactical map, you can control the battlefield, select units,
+set the routes of friendly forces, establish rules for opening fire, choose
+building and much more. Blue tactical icons represent units,
+belonging to the blue coalition, the red ones, respectively, to the red coalition.
+Selected units are displayed with yellow icons.
+ 
+Cursor coordinates Game date/time and time acceleration
+     
+take control
+Add label
+ 
+Show all routes
+Show lifebar
+ 
+Show all targets Center on player's LA
+ 
+ 
+Detection zones Normal
+   scale
+ 
+Damage zones
+  Decrease
+scale
+Object labels
+ 
+Increase
+Scale distance measurement
+   
+Display options
+cards
+ 
+  
+Figure 8. Tactical map
+Above the screen is a toolbar with the following
+function buttons (from left to right):
+Cursor coordinates. When you move the mouse, this field displays geographic
+coordinates of the current cursor position.
+Take control. When you click on this button, you go into control from the first
+faces of the selected unit.
+10 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Показать все маршруты. При нажатии этой кнопки, на карте будут отображаться все 
+маршруты групп юнитов. 
+Показать все цели. При нажатии этой кнопки, на карте будут отображаться все текущие 
+цели для всех групп юнитов. 
+Зоны обнаружения. При включении этой функции отображаются зоны обнаружения 
+радиолокационных станций юнитов ПВО. 
+Зоны поражения. При включении этой функции отображаются зоны поражения для всех 
+наземных юнитов. 
+Ярлыки объектов. При включении этой функции, рядом с каждым юнитом будет 
+отображаться ярлык, информирующий о типе юнита. 
+Измерение расстояния. Данная функция позволяет измерять расстояния на карте простым 
+перетаскиванием курсор мыши. Чтобы измерить расстояние, наведите курсор на точку, 
+откуда будет произведено измерение, затем, нажав и не отпуская левую кнопку мыши, 
+перетащите курсор в точку, до которой требуется замерить расстояние. Справа от кнопки 
+измерение расстояния отобразится дальность, а рядом с надписью КУРС – курс прямой 
+измерения дальности. Дальность измеряется в морских милях или километрах, в 
+зависимости от метрической системы, выбранной в настройках игры. 
+Увеличение масштаба. Нажмите эту кнопку, чтобы увеличить масштаб карты. Вид курсора 
+изменится на увеличительное стекло со знаком “+”. Нажмите на левую кнопку мыши в 
+точке, в которой требуется увеличить масштаб.  Для отключения функции увеличения 
+масштаба, нажмите кнопку еще раз. 
+Уменьшение масштаба. Нажмите эту кнопку, чтобы уменьшить масштаб карты. Вид 
+курсора изменится на увеличительное стекло со знаком “-”. Нажмите на левую кнопку 
+мыши в точке, в которой требуется увеличить масштаб. Для отключения функции 
+уменьшения масштаба, нажмите кнопку еще раз. 
+Нормальный масштаб. Нажмите эту кнопку, чтобы быстро восстановить масштаб 100%. 
+Центра на ЛА. Нажмите эту кнопку, чтобы привязать центр карты к вашему ЛА. 
+Показать лайфбар. При включении этой функции, над значками юнитов отображаются 
+зеленые полоски лайфбара - “запас жизни/прочности”. 
+Добавить метку. Нажмите эту кнопку, чтобы разместить на карте метку с текстом. Метки 
+позволяют вам отмечать различные области и объекты на карте, будь то позиции целей, 
+угрозы, дружественные подразделения и т.д. Для каждой метки можно ввести уникальный 
+текст. При игре в мультиплеере ваша метка с текстом будет видна остальным игрокам. 
+Опции отображения карты. В правом верхнем углу экрана можно выбрать режимы 
+отображения карты, включающие: 
+  КРТ. Карта без данных о высотах рельефа местности. 
+  ВЫС. Карта с данными о высотах рельефе местности. 
+  СПТ. Вид со спутника. 
+11  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Show all routes. When you click this button, the map will display all
+routes of groups of units.
+Show all targets. When you click this button, the map will display all current
+targets for all groups of units.
+detection zones. When this function is enabled, detection zones are displayed
+radar stations of air defense units.
+Damage zones. When enabled, this feature displays the affected areas for all
+ground units.
+Object labels. When this feature is enabled, next to each unit will be
+a label is displayed informing about the type of unit.
+Distance measurement. This feature allows you to measure distances on a map by simply
+dragging the mouse cursor. To measure the distance, move the cursor over a point,
+from where the measurement will be made, then, pressing and holding the left mouse button,
+drag the cursor to the point to which you want to measure the distance. To the right of the button
+distance measurement, the range will be displayed, and next to the inscription COURSE - the course of the straight line
+range measurements. Range is measured in nautical miles or kilometers.
+depending on the metric system selected in the game settings.
+Zoom in. Click this button to zoom in on the map. Cursor view
+will change to a magnifying glass with a “+” sign. Click on the left mouse button in
+the point where you want to zoom in. To turn off the zoom function
+scale, press the button again.
+Scale down. Click this button to zoom out on the map. View
+cursor will change to a magnifying glass with a “-” sign. Click on the left button
+mouse at the point where you want to zoom in. To disable the function
+zoom out, press the button again.
+Normal scale. Click this button to quickly restore zoom to 100%.
+Center on LA. Click this button to link the map center to your aircraft.
+Show lifebar. When this feature is enabled, unit icons will display
+green lifebar stripes - “life/strength reserve”.
+Add label. Click this button to place a marker with text on the map. Tags
+allow you to mark different areas and objects on the map, be it the positions of targets,
+threats, friendly units, etc. For each label, you can enter a unique
+text. When playing in multiplayer, your label with text will be visible to other players.
+Map display options. In the upper right corner of the screen, you can select modes
+map displays, including:
+ KRT. Map without elevation data.
+ HIGH. A map with data on the heights of the terrain.
+ SPT. Satellite view.
+11 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+  ШД. Отображение сетки широта/долгота. 
+  MGRS. Отображение координатной сетки Military Grid Reference System (MGRS), 
+используемой НАТО. 
+ИГРА ЗА ОВ КОМАНДИРА 
+Командная панель 
+ 
+Рисунок 9. Командная панель 
+Чтобы получить подробную информацию о юните или непосредственно перейти к 
+командованию, необходимо выделить юнит на карте, щелкнув по нему левой кнопкой 
+мыши, после чего в нижней части карты откроется командная панель. Значок юнита при 
+этом изменится на желтый. 
+В левой части панели, в зависимости от типа юнита, представлена следующая 
+информация: 
+  Высота над уровнем моря 
+  Скорость 
+  Направление 
+  Текущие координаты  
+Правее находится блок с дополнительной информацией о выбранном юните: 
+  Страна принадлежности 
+  Название группы  
+  Тип 
+  Задача 
+  Позывной 
+С правой стороны расположен блок команд: 
+ 
+ 
+12  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+ SD. Latitude/longitude grid display.
+ MGRS. Military Grid Reference System (MGRS) grid display,
+used by NATO.
+GAME FOR OV COMMANDER
+command panel
+ 
+Figure 9. Command bar
+For detailed information about a unit or go directly to
+command, you need to select a unit on the map by clicking on it with the left button
+mouse, after which a command panel will open at the bottom of the map. Unit icon when
+this will change to yellow.
+On the left side of the panel, depending on the type of unit, the following
+information:
+ Height above sea level
+ Speed
+ Direction
+ Current coordinates
+To the right is a block with additional information about the selected unit:
+ Country of origin
+ Group name
+ Type
+ Task
+ Callsign
+On the right side is a block of commands:
+ 
+ 
+12 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Строй -  выпадающий список боевых порядков: 
+  Колонна  
+  Фронт  
+  Ромб 
+  Клин 
+  Конус 
+  Правый пеленг  
+  Левый пеленг  
+ПВБ - выпадающий список правил ведения боя: 
+  ОГОНЬ – стрельба по любому обнаруженному противнику, находящемуся в 
+пределах зоны поражения. Очередность поражения целей выбирается группой в 
+зависимости от обстановки.  
+  ОТВЕТНЫЙ ОГОНЬ – открытие огня только после обстрела противником; юнит не 
+стреляет первым.  
+  НЕ ОТКРЫВАТЬ ОГОНЬ – запрет на ведение огня. При выборе данного правила, 
+юниты ПВО отключают свои РЛС (при наличии таковых). 
+СОСТ. – выпадающий список состояний готовности: 
+  ЗЕЛЕНЫЙ – группа находится в походном положении и не готова к бою. Она не 
+производит поиск цели и не применяет оружие. Сенсоры выключены и находятся в 
+походном положении (если это предусматривается их конструкцией). 
+  КРАСНЫЙ – группа готова к бою и производит поиск целей. Некоторые юниты, 
+такие как ЗРК большой дальности и артиллерия не могут в режиме красной 
+готовности.  
+  АВТО – состояние по умолчанию. В режиме АВТО группа находится в походном 
+положении до обнаружения противника. После обнаружения противника группа 
+автоматически переходит из походного положения (ЗЕЛЕНЫЙ) в боевую готовность 
+(КРАСНЫЙ). 
+СКОР. – ползунок установки скорости. Перемещайте ползунок вправо или влево, чтобы 
+задать скорость передвижения группы. 
+ЗАДАТЬ МАРШРУТ. Кнопка ЗАДАТЬ МАРШРУТ включает режим установки промежуточных 
+точек маршрута (ППМ) для группы. Установите на карте точки маршрута с помощью левой 
+кнопкой мыши и нажмите кнопку ЗАДАТЬ МАРШРУТ еще раз. После этого группа начнет 
+движение по маршруту, проходя все установленные ППМ. Для активации маршрута также 
+можно нажать правую кнопку мыши, вместо повторного нажатия кнопки ЗАДАТЬ 
+МАРШРУТ. 
+13  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Formation - drop-down list of battle formations:
+ Column
+ Front
+ Rhombus
+ Wedge
+ Cone
+ Right bearing
+ Left bearing
+PVB - drop-down list of combat rules:
+ FIRE - shooting at any detected enemy located in
+within the affected area. The sequence of hitting targets is selected by the group in
+depending on the situation.
+ RETURN FIRE - opening fire only after enemy shelling; unit is not
+shoots first.
+ DO NOT OPEN FIRE - a ban on firing. When choosing this rule,
+AA units disable their radars (if any).
+CONST. – drop-down list of readiness states:
+ GREEN - the group is in the stowed position and not ready for combat. She doesn't
+searches for a target and does not use weapons. The sensors are off and in
+stowed position (if it is provided for by their design).
+• RED - the group is ready for combat and is searching for targets. Some of the units
+such as long-range air defense systems and artillery cannot in red mode
+readiness.
+ AUTO is the default state. In AUTO mode, the group is on the march
+position until the enemy is detected. After the discovery of the enemy, the group
+automatically switches from traveling (GREEN) to alert
+(RED).
+SPEED – speed setting slider. Move the slider to the right or left to
+set the group's speed.
+SET ROUTE. The SET ROUTE button turns on the mode of setting intermediate
+waypoints (PPM) for the group. Set waypoints on the map using the left
+mouse button and press the SET ROUTE button again. After that, the group will
+movement along the route, passing all the established waypoints. To activate the route also
+you can press the right mouse button instead of pressing the SET button again
+ROUTE.
+13 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ДОБАВИТЬ ЦЕЛЬ. Кнопка включает режим назначения целей для выбранной группы. 
+Данная функция доступна только для юнитов, ведущих огонь с закрытых огневых позиций: 
+артиллерия и РСЗО. 
+При нажатии на кнопку ДОБАВИТЬ ЦЕЛЬ, вид курсора меняется на прицельное 
+перекрестие, с помощью которого задаются цели. После назначения целей отобразится 
+панель цели, на которой производится управление стрельбой. 
+Координаты цели  Начало/завершение 
+стрельбы 
+Радиус цели 
+Удалить цель 
+ 
+Рисунок 10. Панель целеуказания 
+Координаты цели – поле ввода географических координат цели. УСТ. – кнопка ввода 
+введенных координат цели. 
+Радиус цели – радиус зоны обстрела. Снаряды распределяются по кругу с указанным 
+радиусом. 
+Начать стрельбу – кнопка начала или завершения стрельбы. 
+Удалить цель – кнопка удаления выбранной цели. 
+ 
+ 
+14  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+ADD GOAL. The button switches on the target assignment mode for the selected group.
+This function is only available for units firing from indirect firing positions:
+artillery and MLRS.
+When you press the ADD TARGET button, the cursor changes to a target
+crosshair, with the help of which goals are set. After assigning goals, you will see
+target panel on which fire control is performed.
+Target coordinates Start/End
+shooting
+target radius
+Delete target
+ 
+Figure 10. Target designation panel
+Target coordinates – field for entering geographic coordinates of the target. SET - enter button
+entered target coordinates.
+Target radius - the radius of the firing zone. Projectiles are distributed in a circle with the specified
+radius.
+Start shooting - button to start or end shooting.
+Delete target – the button for deleting the selected target.
+ 
+ 
+14 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Перемещение юнитов 
+После нажатия на кнопку ЗАДАТЬ МАРШРУТУ, вы можете установить одну или несколько 
+точек маршрута, по которым группа будет следовать в порядке очередности. Используйте 
+левую кнопку мыши, чтобы устанавливать ППМ. После установки всех точек, нажмите 
+кнопку ЗАДАТЬ МАРШРУТ или правую кнопку мыши, чтобы группа начала движение по 
+маршруту. Маршрут отображается желтой пунктирной линией. Юниты могут 
+передвигаться как по дорогам, так и по пересеченной местности. Точки маршрута, 
+размещенные на дорогах, отображаются зеленым цветом, на пересеченной местности – 
+красным. 
+ 
+Рисунок 11. Расстановка точек маршрута 
+15  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Unit movement
+After pressing the SET ROUTE button, you can set one or more
+waypoints that the group will follow in order of priority. Use
+left mouse button to set PPM. After setting all points, press
+the SET ROUTE button or the right mouse button to make the group start moving along
+route. The route is displayed as a yellow dotted line. Units can
+move both on roads and over rough terrain. waypoints,
+placed on roads are displayed in green, on rough terrain -
+red.
+ 
+Figure 11. Placement of waypoints
+15 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ 
+Рисунок 12. Маршрут задан 
+ 
+ 
+16  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+ 
+Figure 12. The route is set
+ 
+ 
+16 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+КОМАНДОВАНИЕ НАЗЕМНЫМИ 
+ПОДРАЗДЕЛЕНИЯМИ ОТ ПЕРВОГО ЛИЦА  
+Кроме тактического режима управления наземными юнитами, осуществляемого 
+посредством карты (F10), вы можете управлять техникой от первого лица, а именно: 
+водить и стрелять. 
+Выбор юнита 
+Чтобы войти в режим управления от первого лица, выберите юнит, которым хотите 
+управлять, на тактической карте, затем нажмите [Right Alt + J]. Если вы хотите войти в 
+режим передового авианаводчика (ПАН), выделите юнит и нажмите клавишу [B]. 
+Также взять управление юнитом можно на внешнем виде [F7]: выберите желаемый юнит с 
+помощью клавиши [F7], а затем нажмите [Right Alt + J]. 
+Огневой рубеж позволяет вам управлять большинством наземных юнитов DCS, имеющих 
+вооружение. 
+Нижеперечисленные классы юнитов не доступны для управления на данный момент: 
+  ЗРК большого радиуса, включающие раздельные РЛС и пусковые установки. 
+  Позиции радиолокаторов. 
+  Переносные зенитные ракетные комплексы (ПЗРК).  
+  Пехотные подразделения.  
+  Транспортные подразделения.  
+Управление техникой 
+В режиме от первого лица можно управлять боевыми машинами, используя следующие 
+клавиши: 
+Увеличить скорость - [W] 
+Торможение - [S] 
+Повернуть налево - [A] 
+Повернуть направо - [D] 
+Ручной тормоз - [H] 
+Автопилот - [C]. Группа будет следовать по заданному маршруту, установленному на 
+тактической карте.  
+17  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+COMMAND GROUND
+FIRST-PERSON SUBDIVISIONS
+In addition to the tactical mode of controlling ground units, carried out by
+using the map (F10), you can control vehicles in the first person, namely:
+drive and shoot.
+Unit selection
+To enter first person control mode, select the unit you want
+steer, on the tactical map, then press [Right Alt + J]. If you would like to enter
+Advanced Aircraft Controller (PAN) mode, select a unit and press the [B] key.
+You can also take control of a unit on the exterior [F7]: select the desired unit with
+using the [F7] key, and then press [Right Alt + J].
+The firing line allows you to control most of the DCS ground units that have
+armament.
+The following unit classes are not available for control at the moment:
+ Long-range air defense systems, including separate radars and launchers.
+ Radar positions.
+ Man-Portable Air Defense Systems (MANPADS).
+ Infantry units.
+ Transport departments.
+Machinery management
+In first person mode, you can control combat vehicles using the following
+keys:
+Increase Speed ​​- [W]
+Braking - [S]
+Turn Left - [A]
+Turn Right - [D]
+Handbrake - [H]
+Autopilot - [C]. The group will follow the given route set on
+tactical map.
+17 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+На боевой технике стоят механические коробки передач, и вам придется переключать 
+скорости. Чтобы двигаться назад, перейдите на самую низкую передачу (заднего хода). 
+Увеличить скорость - [X] 
+Уменьшить скорость - [Z] 
+ 
+Другие управляющие клавиши, имеющиеся на большей части боевой техники, включают: 
+Запустить зеленую ракету - [Left Alt + 2] 
+Запустить красную ракету - [Left Alt + 1] 
+Запустить белую ракету - [Left Alt + 3] 
+Режим ночного видения - [N] 
+Увеличить усиление ночного видения - [Right Alt + N] 
+Уменьшить усиление ночного видения - [Right Ctrl + N] 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+18  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Military vehicles have manual transmissions, and you have to shift
+speed. To move backward, shift to the lowest gear (reverse).
+Increase Speed ​​- [X]
+Decrease Speed ​​- [Z]
+ 
+Other control keys found on most military vehicles include:
+Launch Green Rocket - [Left Alt + 2]
+Launch Red Rocket - [Left Alt + 1]
+Launch White Rocket - [Left Alt + 3]
+Night vision mode - [N]
+Increase Night Vision Gain - [Right Alt + N]
+Decrease Night Vision Gain - [Right Ctrl + N]
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+18 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Управление передвижением группы  
+Точка, в которую приказано 
+выдвинуться группе 
+ 
+ 
+Рисунок 13. Управление передвижением группы  
+В режиме от первого лица у вас также сохраняется возможность контролировать 
+передвижение группы. Чтобы включить режим задачи маршрута от первого лица, прежде 
+всего зажмите клавишу [G], в центре экрана при этом отобразится зеленая стрелка, затем, 
+не отпуская клавишу [G], переместите стрелку в точку, в которую должна двигаться группа 
+и нажмите левую кнопку мыши. После этого группы начнет движение на указанную 
+позицию.  
+ 
+19  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Group movement management
+The point at which it is ordered
+advance group
+ 
+ 
+Figure 13. Group movement management
+In first-person mode, you also retain the ability to control
+group movement. To enable first-person route task mode, first
+just hold down the [G] key, a green arrow will appear in the center of the screen, then,
+without releasing the [G] key, move the arrow to the point where the group should move
+and press the left mouse button. After that, the group will start moving to the specified
+position.
+ 
+19 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Управление группой посредством радиокоманд  
+В режиме командования наземной группой от первого лица можно отдавать приказы 
+другим членам группы посредством радиосвязи. Откройте радиоменю нажатием клавиши 
+[\]. 
+В радеоменю доступны три подменю со следующими командами: 
+Выбор боевого порядка.  
+  Колонна  
+  Фронт  
+  Ромб 
+  Клин 
+  Конус 
+  Правый пеленг  
+  Левый пеленг  
+ 
+Примечание: чтобы остальные члены вашей группы выдерживали место в строю, 
+когда вы управляете юнитом от первого лица, прежде всего вам требуется выбрать 
+боевой порядок. 
+ 
+Выбор правила вступления в боестолкновение (ПВБ). Войдите в меню ПВБ для просмотра 
+доступных режимов. 
+  ОГОНЬ – открывать огонь по любой цели противника, находящейся в зоне 
+поражения. Очередность поражения целей определяется в зависимости от 
+ситуации.  
+  ОТВЕТНЫЙ ОГОНЬ – группа начинает стрельбу только, если была атакована 
+противником.  
+  НЕ СТРЕЛЯТЬ – запрет на видение огня. Юниты ПВО, оснащенные РЛС (например, 
+ЗРК) отключают их. 
+ 
+ 
+ 
+20  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Group control via radio commands
+You can issue orders in first-person ground group command mode
+other members of the group via radio communication. Open the radio menu by pressing the key
+[\].
+Three submenus are available in the radio menu with the following commands:
+Choice of battle formation.
+ Column
+ Front
+ Rhombus
+ Wedge
+ Cone
+ Right bearing
+ Left bearing
+ 
+Note: in order for the rest of your group to maintain a place in the ranks,
+when you control a unit from the first person, first of all you need to choose
+battle order.
+ 
+Choice of the rule of entry into a clash (PVB). Enter the PVB menu to view
+available modes.
+FIRE - open fire on any enemy target located in the zone
+defeat. The sequence of hitting targets is determined depending on
+situations.
+ RETURN FIRE - the group only starts shooting if it was attacked
+adversary.
+ DO NOT SHOOT - a ban on seeing fire. Air defense units equipped with radar (for example,
+SAM) disable them.
+ 
+ 
+ 
+20 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Управление башней 
+Многие боевые машины кроме основной башни, также оснащены командирскими 
+башенками с/или турелями. Как правило в башне установлен главный калибр боевой 
+машины - пушка и/или ракетный комплекс. В башенках или на турелях устанавливаются 
+пулеметы. 
+Переключение между башней и башенкой/турелью осуществляется с помощью клавиши 
+[Q] 
+Центрировать башню/башенку (турель) - [Numpad 5] 
+Стабилизатор вооружения - [V] 
+ 
+Выбор оружия 
+После выбора башни/башенки, можно просмотреть доступное оружие, нажав клавишу [E]. 
+В зависимости от выбранного оружия, может меняться вид прицельной сетки, а также 
+появляться новая индикация. Перебор типа боеприпасов орудий (бронебойный и 
+фугасный), также осуществляется клавишей [E]. 
+ 
+Пополнение боеприпасов 
+Пополнение боекомплекта производится со складов или автомобилей снабжения: УРАЛ-
+375 для красной коалиции и M818 для синей. Чтобы начать пополнение боекомплекта, 
+нажмите [LALT + \]. Обратите внимание, что юнит должен находиться в пределах 100 
+метров от склада/автомобиля снабжения своей коалиции. Техника, управляемая ИИ, 
+находящаяся рядом со своим складом или автомобилем снабжения пополняет 
+боекомплект автоматически каждые 60 секунд.  
+Чтобы пополнить боеприпасы на аэродроме, передовом пункте пополнения боекомплекта 
+и дозаправки, держитесь ближе к складу, на котором можно пополнить боекомплект и 
+дозаправиться, или к аэродрому.   
+ 
+ 
+ 
+21  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Tower control
+Many combat vehicles, in addition to the main turret, are also equipped with commander's
+turrets with / or turrets. As a rule, the main caliber of combat is installed in the tower
+machines - a gun and / or a missile system. In turrets or on turrets are installed
+machine guns.
+Switching between the tower and the turret / turret is carried out using the key
+[Q]
+Center Turret/Turret (Sentry) - [Numpad 5]
+Weapon Stabilizer - [V]
+ 
+Weapon choice
+After selecting a tower / turret, you can view the available weapons by pressing the [E] key.
+Depending on the selected weapon, the type of reticle may change, as well as
+a new display appears. Enumerating the type of ammunition for guns (armor-piercing and
+high-explosive), also carried out by the [E] key.
+ 
+Ammunition replenishment
+Replenishment of ammunition is carried out from warehouses or supply vehicles: URAL-
+375 for the red coalition and M818 for the blue. To start replenishing ammunition,
+press [LALT + \]. Note that the unit must be within 100
+meters from the warehouse / supply vehicle of their coalition. AI controlled technology
+located next to its warehouse or supply vehicle replenishes
+ammunition automatically every 60 seconds.
+To replenish ammunition at the airfield, the forward resupply point
+and refueling, stay close to the depot where you can replenish ammunition and
+refuel, or to the airfield.
+ 
+ 
+ 
+21 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ПРИМЕНЕНИЕ ОРУЖИЯ 
+Перемещайте мышь в том направлении, в котором хотите повернуть башню или 
+башенку/турель. Также для управления орудием можно использовать джойстик.  
+Примечание: если вы не может навести прицел на цель (поймать и удерживать 
+определенную точку в прицеле), проверьте настройки устройств ввода. Вероятно, у вас 
+присутствует конфликт устройств, либо не настроена мертвая зона джойстика. 
+Чтобы начать стрельбу/запустить ракету, нажмите левую кнопку мыши или клавишу 
+[SPACE]. 
+Для изменения кратности прицела используйте правую кнопку мыши (кратковременное 
+изменение кратности), либо нажмите клавишу [=] для увеличение кратности и [-] для 
+уменьшения. При стрельбе по удаленным целям рекомендуется увеличивать кратность 
+прицела, чтобы облегчить прицеливание. 
+Пулеметы, автоматические пушки, зенитные орудия 
+Вооружение данного типа устанавливается отдельно (в отдельную башню/турель), либо в 
+качестве спаренного, c оружием, установленном в основной башне. Остаток боекомплекта 
+и тип выбранного оружия указывается в правом нижнем углу. 
+Примечание: расчет упреждения при стрельбе из зенитных орудий – задача не из 
+легких. Рекомендуется включить опцию “Вычислять огневое решение”, находящуюся в 
+меню опций “Специальные”. 
+22  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+WEAPONS USE
+Move the mouse in the direction you want to rotate the tower or
+turret/turret. You can also use the joystick to control the implement.
+Note: If you are unable to aim at the target (catch and hold
+a certain point in the scope), check the input device settings. You probably have
+there is a device conflict, or the dead zone of the joystick is not configured.
+To start shooting/launch a rocket, press the left mouse button or press the
+[SPACE].
+To change the magnification of the sight, use the right mouse button (short-term
+change the multiplicity), or press the [=] key to increase the multiplicity and [-] to
+reduction. When shooting at distant targets, it is recommended to increase the magnification
+scope to make aiming easier.
+Machine guns, automatic guns, anti-aircraft guns
+Armament of this type is installed separately (in a separate tower / turret), or in
+as a twin, with weapons installed in the main turret. The rest of the ammunition
+and the type of the selected weapon is indicated in the lower right corner.
+Note: calculating the lead when firing from anti-aircraft guns is not a task from
+lungs. It is recommended to enable the option “Calculate fire solution”, located in
+Options menu “Special”.
+22 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Шкала компаса 
+выбранного 
+оружия 
+ 
+Компас башни и 
+шасси 
+Прицельная сетка   
+Блок данных 
+ 
+Рисунок 14. Вид из пулеметного прицела танка Т-90 
+Главное орудие 
+При выборе главного орудия (орудия в основной башне) на экране отображается его 
+прицельная сетка. Также, как и в случае с орудиями малого калибра, остаток 
+боекомплекта и тип орудия выводятся в правом нижнем углу.  
+Танковые орудия могут вести стрельбу бронебойными или фугасными снарядами. Выбор 
+типа снаряда осуществляется клавишей [E].   
+Как и в реальности, боевая техника, представленная в модуле Огневой рубеж, оснащена 
+различными прицелами. Ниже приведен внешний вид прицельных сеток двух известных 
+танков. 
+ 
+23  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+compass scale
+selected
+weapons
+ 
+compass tower and
+chassis
+Reticle
+Data block
+ 
+Figure 14. View from the machine gun sight of the T-90 tank
+main gun
+When selecting the main gun (the gun in the main turret), the screen displays its
+aiming grid. Also, as in the case of small-caliber guns, the remainder
+Ammunition load and gun type are displayed in the lower right corner.
+Tank guns can fire armor-piercing or high-explosive shells. Choice
+projectile type is carried out with the [E] key.
+As in reality, the military equipment presented in the Firing Line module is equipped with
+various sights. Below is the appearance of the sighting reticles of two well-known
+tanks.
+ 
+23 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ 
+Прицельная сетка 
+Рисунок 15. Прицельная сетка танка M1A2 Abrams  
+Прицельная сетка 
+ 
+ Рисунок 16. Прицельная сетка танка Т-72Б 
+24  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+ 
+Reticle
+Figure 15. Reticle tank M1A2 Abrams
+Reticle
+ 
+ Figure 16. Reticle of the T-72B tank
+24 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Лазерный дальномер и баллистический вычислитель 
+Большая часть современных боевых машин оснащена лазерными дальномерами (ЛД) и 
+баллистическими вычислителями. ЛД предназначен для быстрого и точного измерения 
+дальности до цели, а баллистический вычислитель для выработки углов наведения орудия 
+(расчета упреждения). Оба устройства в совокупности позволяют быстро наводить орудие 
+на цель, не требуя от наводчика сложных манипуляций. 
+Включить ЛД - [L] 
+Сброс показаний ЛД - [RCtrl + L] 
+Если боевая машина оснащена ЛД, то в нижней или верхней части экрана отображается 
+индикатор дальномера, отображающий дальность до цели в метрах. 
+Процедура применения ЛД и баллистического вычислителя следующая. Наложите 
+прицельное перекрестие на цель и нажмите кнопку [L], чтобы замерить дальность. 
+Баллистический вычислитель автоматически рассчитает требуемые углы наведения 
+орудия.  
+Дальнейшие действия зависят от типа машины. В модуле Огневой рубеж, техника с ЛД 
+условно оснащена СУО (системами управления огнем) предыдущего или современного 
+поколения. 
+  После измерения дальности, СУО предыдущего поколения производит расчет 
+требуемых углов наведения орудия и выдает соответствующие команды в прицел. 
+Игроку требуется наложить прицельную марку на цель, руководствуясь 
+поправками вычислителя, и произвести выстрел. 
+  Современная СУО обеспечивает самостоятельное наведение орудия. Игроку лишь 
+требуется навести прицельную марку на цель и замерить дальность, остальное 
+сделает баллистический вычислитель и СУО. 
+Максимальная дальность измерения для ЛД, установленных на бронетехнике, составляет 
+5000 метров. 
+Некоторые боевые машины не оснащены ЛД и баллистическим вычислителем. 
+Прицеливание в таких машинах осуществляется вручную. Дальность до цели определяется 
+“на глаз” - по угловым размерами цели в прицельной сетке, а также ее положению 
+относительно ориентиров, дальность до которых известна. 
+ 
+ 
+ 
+25  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Laser rangefinder and ballistic computer
+Most modern combat vehicles are equipped with laser rangefinders (LD) and
+ballistic computers. LD is designed for fast and accurate measurement
+range to the target, and a ballistic computer for developing gun pointing angles
+(calculation of lead). Both devices together allow you to quickly aim the gun
+on the target, without requiring complicated manipulations from the gunner.
+Enable LD - [L]
+Reset LD readings - [RCtrl + L]
+If the combat vehicle is equipped with an LD, then at the bottom or top of the screen is displayed
+rangefinder indicator showing the distance to the target in meters.
+The procedure for using the LD and the ballistic computer is as follows. Overlay
+crosshairs on the target and press the [L] button to measure the range.
+The ballistic calculator will automatically calculate the required pointing angles
+tools.
+The next steps depend on the type of machine. In the Firing Line module, vehicles with LD
+conditionally equipped with FCS (fire control systems) of the previous or modern
+generations.
+ After measuring the range, the previous generation OMS calculates
+required aiming angles of the gun and issues the appropriate commands to the sight.
+The player is required to place an aiming mark on the target, guided by
+calculator corrections, and fire a shot.
+ Modern SLA provides independent aiming of the gun. The player only
+you need to point the aiming mark at the target and measure the range, the rest
+will make a ballistic computer and SLA.
+The maximum measurement range for LDs mounted on armored vehicles is
+5000 meters.
+Some combat vehicles are not equipped with LD and ballistic computer.
+Aiming in such machines is carried out manually. The distance to the target is determined
+“by eye” - according to the angular dimensions of the target in the reticle, as well as its position
+relative to landmarks, the range to which is known.
+ 
+ 
+ 
+25 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Цель 
+ 
+Метка ЛД 
+ 
+Рисунок 17. Прицел наводчика танка Т-72Б. Танк оснащен СУО предыдущего поколения. Красная метка 
+отображает точку замера дальности ЛД 
+Шкала дальности 
+до цели 
+ 
+Прицельная марка 
+Рисунок 18. Выполнен замер дальности. Требуется наложить прицельную марку на цель 
+26  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Target
+ 
+Label LD
+ 
+Figure 17. Gunner's sight of the T-72B tank. The tank is equipped with the previous generation FCS. red label
+displays the LD range measurement point
+range scale
+to the goal
+ 
+Aiming mark
+Figure 18. Ranging completed. It is required to impose an aiming mark on the target
+26 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Рисунок 19. Прицельная марка на цели. Можно произвести выстрел 
+Рисунок 20. Прицел танка Leclerc. Танк оснащен современной СУО. После замера дальности можно сразу 
+произвести выстрел 
+27  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Figure 19. Aiming mark on the target. Can be shot
+Figure 20. The sight of the Leclerc tank. The tank is equipped with a modern FCS. After measuring the range, you can immediately
+fire a shot
+27 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Управляемое оружие 
+К управляемому оружию относятся все управляемые ракеты, запускаемые с наземных 
+юнитов. В модуле Огневой рубеж к такому оружию относятся противотанковые 
+управляемые ракеты (ПТРК) и зенитные управляемые ракеты (ЗУР). Также, как и 
+бронированная техника, средства ПВО имеют собственные прицелы и индикацию.  
+Процедура применения управляемых ракет несколько отличается в зависимости от типа и 
+системы наведения. 
+Для большинства техники она сводится к следующему: после визуального обнаружения 
+цели необходимо наложить на нее прицельное перекрестие (прицельную марку) и нажать 
+клавишу [ENTER], чтобы выполнить захват. Дальнейшие действия зависят от типа ракеты и 
+метода наведения: 
+  Применении управляемых ракет “земля-воздух” с методом наведения “три точки”. 
+Наведение таких ракет в модуле Огневой рубеж осуществляется в 
+полуавтоматическом режиме, путем удержания прицельной марки на цели вплоть 
+до ее поражения. После захвата цели дождитесь готовности к стрельбе (таймер 
+готовности отображается в левом нижнем углу), когда цвет прицельной рамки 
+изменится на красный, произведите пуск ракеты. Также вы можете осуществлять 
+пуск ракеты без захвата цели. Среди систем ПВО, использующих метод наведения 
+“три точки” и доступных для управления: ЗРПК 2К22 “Тунгуска”. 
+  Применение управляемых ракет “земля-воздух” с РЛ ГСН. После захвата цели 
+дождитесь, когда она войдет в зону разрешенных пусков (ЗРП), затем выполните 
+пуск ракеты. Вход цели в ЗРП контролируется по наличию индикации “ЗРП” в 
+левом нижнем углу. Наведение ракеты происходит автоматически и не требует 
+вмешательства игрока. Среди систем ПВО, оснащенных ракетами с РЛ ГСН и 
+доступных для управления: ЗРК 9К33 “Оса” и 9К330 “Тор”. 
+  Применение управляемых ракет “земля-воздух” с ИК ГСН. Захват цели такими 
+ракетами осуществляется путем наложения и удержания прицельной марки на 
+цели. Наличие и устойчивость захвата определяется по звуковому сигналу 
+зуммера. Непрерывный звук высокого тона свидетельствует об устойчивом захвате 
+цели. Такой сигнал, однако, не всегда означает, что цель находится в пределах ЗРП, 
+поэтому ракета может попросту не достигнуть цели. Ракеты, оснащенные ИК ГСН, 
+являются оружием класса “пустил-забыл”, т.е. их наведение не требует подсвета 
+цели после пуска. Среди систем ПВО, оснащенных ракетами с ИК ГСН и доступных 
+для управления: ЗРК 9К31 “Стрела-1”, 9К35 “Стрела-10”, Chaparral M48 и др. 
+  Наконец, процедура стрельбы противотанковыми управляемыми ракетами (ПТУР) 
+аналогична применению ЗУР с наведением по методу “трех точек”. Требуется 
+удерживать прицельное перекрестие/марку на цели вплоть до ее поражения. 
+Обратите внимание, что большинство современных ПТУР способны применяться 
+против низколетящих вертолетов. 
+28  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+guided weapon
+Guided weapons include all guided missiles launched from ground
+units. In the Firing Line module, such weapons include anti-tank
+guided missiles (ATGM) and anti-aircraft guided missiles (SAM). As well as
+armored vehicles, air defense systems have their own sights and indications.
+The procedure for using guided missiles differs somewhat depending on the type and
+guidance systems.
+For most technology, it boils down to the following: after visual detection
+target, you need to put an aiming crosshair (aiming mark) on it and press
+[ENTER] key to capture. Further actions depend on the type of rocket and
+guidance method:
+ The use of surface-to-air guided missiles with the “three point” guidance method.
+Guidance of such missiles in the Firing Line module is carried out in
+semi-automatic mode, by holding the aiming mark on the target until
+before her defeat. After locking the target, wait until you are ready to shoot (timer
+readiness is displayed in the lower left corner) when the color of the aiming frame
+changes to red, launch the rocket. You can also carry out
+missile launch without target acquisition. Among air defense systems using the guidance method
+"three points" and available for control: ZRPK 2K22 "Tunguska".
+ Use of surface-to-air guided missiles with radar seeker. After target acquisition
+wait until it enters the permitted launch zone (ZRP), then perform
+rocket launch. The entry of the target into the ZRP is controlled by the presence of the “ZRP” indication in
+bottom left corner. Missile guidance is automatic and does not require
+player intervention. Among the air defense systems equipped with missiles with radar seeker and
+available for control: SAM 9K33 "Osa" and 9K330 "Tor".
+ Use of surface-to-air guided missiles with IR seeker. Target acquisition with
+rockets is carried out by imposing and holding an aiming mark on
+goals. The presence and stability of the capture is determined by the sound signal
+buzzer. Continuous high-pitched sound indicates stable capture
+goals. Such a signal, however, does not always mean that the target is within the ZRP,
+therefore, the missile may simply not reach the target. Missiles equipped with IR seeker,
+are fire-and-forget weapons, i.e. their guidance does not require illumination
+targets after launch. Among the air defense systems equipped with missiles with infrared seeker and available
+for control: SAM 9K31 “Strela-1”, 9K35 “Strela-10”, Chaparral M48, etc.
+ Finally, the procedure for firing anti-tank guided missiles (ATGMs)
+similar to the use of missiles with guidance according to the “three points” method. Required
+keep the aiming crosshair / mark on the target until it is hit.
+Please note that most modern ATGMs are capable of being used
+against low-flying helicopters.
+28 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Дальность захвата цели зависит от характеристик сенсора юнита и/или ракеты. При 
+наличии РЛС, захват может быть выполнен на больших дистанциях, чем без нее. После 
+захвата цели, система управления огнем (СУО) юнита производит вычисление огневого 
+решения. Во время вычисления прицельная рамка отображается желтым цветом, а в 
+левом нижнем углу выводится надпись “Готов к стрельбе через …”. При наличии 
+готовности к стрельбе цвет прицельной рамки меняется на красный. 
+Сброс захвата цели выполняется нажатием на клавишу [BACKSPACE]. 
+Прицельная рамка 
+ 
+Прицельная марка 
+Цель 
+ 
+ 
+Тип цели и 
+дальность 
+ 
+Рисунок 21. Индикация в режиме применения ЗУР с ЗРПК Тунгуска. Ракета наводится методом “трех точек” 
+29  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+The target acquisition range depends on the characteristics of the unit's sensor and/or the missile. At
+the presence of a radar, capture can be performed at greater distances than without it. After
+target acquisition, the fire control system (FCS) of the unit calculates the fire
+solutions. During calculation, the aiming frame is displayed in yellow, and in
+in the lower left corner, the inscription “Ready to fire through ...” is displayed. In the presence of
+ready to fire, the color of the aiming frame changes to red.
+Target lock is reset by pressing the [BACKSPACE] key.
+Aiming frame
+ 
+Aiming mark
+Target
+ 
+ 
+target type and
+range
+ 
+Figure 21. Indication in the mode of use of missiles with air defense systems Tunguska. The missile is guided by the “three points” method
+29 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Прицельное 
+перекрестие 
+ 
+Цель 
+ 
+Дистанция до 
+цели и статус 
+готовности к 
+стрельбе 
+ 
+Рисунок 22. Индикация в режиме применения ЗУР с ЗРК Chaparral M48. Ракета оснащена ИК ГСН 
+ 
+Пульт управления ЗРК “Тор” 
+Управляя ЗРК 9К330 “Тор” от первого лица, вы можете переключиться на пульт оператора 
+комплекса, нажав сочетание [RCTRL + F10]. Захват целей и стрельба с пульта оператора 
+мало чем отличается от применения ЗУР с использованием индикации на экране, за той 
+лишь разницей, что все манипуляции производятся мышью. 
+При обнаружении цели, на индикаторе РЛС кругового обзора отображается ее метка, 
+снабженная линией курса. Для захвата цели требуется щелкнуть по метке, при условии, 
+что цель вошла в зону захвата РЛС сопровождения. После захвата (загорается лампа 
+ЗАХВАТ), на правый индикатор будут выведены параметры цели – ее скорость, высота, 
+дистанция и азимут.  
+Чтобы выполнить пуск ракеты, требуется дождаться входа цели в ЗРП (зону разрешенных 
+пусков), затем нажать кнопку ОГОНЬ. Расчетное время поражения цели отображается на 
+правом индикаторе. 
+ 
+ 
+ 
+30  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Sighting
+crosshair
+ 
+Target
+ 
+Distance to
+goals and status
+readiness for
+shooting
+ 
+Figure 22. Indication in the mode of use of missiles with the Chaparral M48 air defense system. The missile is equipped with an IR seeker
+ 
+Control panel for air defense system “Tor”
+When controlling the 9K330 “Tor” air defense system in the first person, you can switch to the operator’s console
+complex by pressing the combination [RCTRL + F10]. Target acquisition and shooting from the operator's console
+is not much different from the use of missiles using the indication on the screen, after that
+The only difference is that all manipulations are done with the mouse.
+When a target is detected, its label is displayed on the indicator of the all-round radar,
+provided with a course line. To capture the target, you need to click on the mark, provided that
+that the target has entered the capture zone of the tracking radar. After capturing (the lamp lights up
+CAPTURE), the target parameters will be displayed on the right indicator - its speed, height,
+distance and azimuth.
+To launch a missile, you need to wait for the target to enter the ZRP (zone of permitted
+starts), then press the FIRE button. The estimated time to hit the target is displayed on
+right indicator.
+ 
+ 
+ 
+30 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Индикатор 
+параметров цели 
+ 
+Метка цели 
+ 
+Текущий масштаб 
+дальности 
+индикатора РЛС 
+ 
+Индикатор РЛС 
+ 
+Рисунок 23. Пульт оператора ЗРК “Тор”. Вид при обнаружении цели 
+ 
+Метка 
+захваченной цели 
+ 
+Горят сигнальные 
+лампы ЗАХВАТ и  Круглая метка 
+ЗПР. Пуск  ракеты 
+разрешен   
+ 
+Рисунок 24. Пульт оператора ЗРК “Тор”. Вид после пуска ракеты 
+ 
+31  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Indicator
+target parameters
+ 
+target label
+ 
+current scale
+range
+radar indicator
+ 
+radar indicator
+ 
+Figure 23. The operator's console of the Tor air defense system. View when target is detected
+ 
+Label
+captured target
+ 
+Signal lights are on
+GRIP and CIRCULAR lamps
+ZPR. rocket launch
+allowed
+ 
+Figure 24. The operator's console of the Tor air defense system. View after rocket launch
+ 
+31 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ИГРА ЗА ПУАН  
+Вы можете перейти в режим ПУАН, управляя любым наземным юнитов. Для включения 
+данного режима выберите юнит, затем перейдите в режим управления от первого лица, 
+сочетание [RALT-J], а далее нажмите клавишу [B]. 
+В режиме ПУАН вы можете перемещать поле зрения, используя клавиши Numpad [2], [4], 
+[5], [6], [8], либо устройства ввода типа TrackIR. Также у вас есть возможность изменять 
+величину поля зрения (кратность), используя сочетание [RCTRL + Num/], чтобы уменьшить 
+кратность или [RCTRL + Num*], чтобы увеличить. Для возвращения к стандартной кратности 
+нажмите [RCTRL + ENTER]. 
+В режиме ПУАН также можно использовать очки и приборы ночного видения, клавиша [N].  
+ПНВ позволяют вам визуально наблюдать луч ИК целеуказателя. 
+ 
+Рисунок 25. ИК целеуказатель (зеленая линия) при виде в режиме ПНВ 
+ 
+32  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+POINT GAME
+You can switch to PUAN mode by controlling any ground units. To enable
+select a unit in this mode, then switch to first-person control mode,
+combination [RALT-J], and then press the [B] key.
+In PUAN mode, you can move the field of view using the Numpad [2], [4],
+[5], [6], [8], or input devices like TrackIR. You also have the ability to change
+field of view value (multiplicity), using the combination [RCTRL + Num/] to reduce
+multiplicity or [RCTRL + Num*] to increase. To return to standard multiplicity
+press [RCTRL + ENTER].
+In PUAN mode, you can also use goggles and night vision devices, [N] key.
+Night vision devices allow you to visually observe the IR targeting beam.
+ 
+Figure 25. IR target designator (green line) when viewed in NVG mode
+ 
+32 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Список команд 
+Данные точки 
+прицеливания 
+ 
+ 
+Рисунок 26. Доступные опции в режиме прицела ПУАН 
+ Рисунок 27. ИК целеуказатель 
+33  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Command List
+Point Data
+aiming
+ 
+ 
+Figure 26. Available options in the PUAN scope mode
+ Figure 27. IR Target
+33 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Вид в режиме ПУАН представляет собой монокулярный прицел, на который выводятся 
+данные точки прицеливания, а также список команд целеуказания (в правом верхнем углу 
+экрана). Рассмотрим индикацию в прицеле ПУАН. 
+Данные точки прицеливания. Поле включает следующие данные точки прицеливания: 
+  Возвышение (доступно при работе лазера)  
+  Азимут 
+  Дальность в метрах (доступна при работе лазера)  
+  Код, заданный для лазерного целеуказателя  
+  Координаты (обновляются при работе лазера)  
+Команды целеуказания. Поле включает следующие команды: 
+1 – Оранжевый дымовой целеуказатель. Пуск дымовой шашки с оранжевым маркерным 
+дымом в точку прицеливания. 
+2 – Красный дымовой целеуказатель. Пуск дымовой шашки с красным маркерным 
+дымом в точку прицеливания.  
+3 – Зеленый дымовой целеуказатель. Пуск дымовой шашки с зеленым маркерным 
+дымом в точку прицеливания. 
+Z – ИК вид. Включает/выключает режим тепловизора. Может использоваться днем. 
+N – ПНВ вид. Включает/выключает режим ночного виденья. Не может использоваться при 
+ярком солнечном свете. 
+L – Лазерный дальномер. Включает/выключает лазерный дальномер-целеуказатель. 
+Возможна установка кода лазерного целеуказателя, клавиша [C]. Максимальная дальность 
+дальнометрирования/целеуказания - 9998 метров. 
+R – ИК маркер. Включает/выключает ИК маркер. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+The view in the PUAN mode is a monocular sight, which displays
+aiming point data, as well as a list of target designation commands (in the upper right corner
+screen). Consider the indication in the PUAN sight.
+Target point data. The field includes the following aiming point data:
+ Elevation (available when the laser is working)
+ Azimuth
+ Distance in meters (available when the laser is working)
+ Code set for the laser designator
+ Coordinates (updated during laser operation)
+Target commands. The field includes the following commands:
+1 - Orange smoke target. Launching a smoke bomb with an orange marker
+smoke at the aiming point.
+2 - Red smoke target. Starting a smoke bomb with a red marker
+smoke at the aiming point.
+3 - Green smoke target. Launching a smoke bomb with a green marker
+smoke at the aiming point.
+Z - IR view. Enables/disables the thermal imager mode. Can be used during the day.
+N - night vision. Turns on/off the night vision mode. Cannot be used when
+bright sunlight.
+L - Laser rangefinder. Turns on/off the laser rangefinder-target designator.
+It is possible to set the laser designator code, [C] key. Maximum range
+ranging / target designation - 9998 meters.
+R - IR marker. Turns on/off the IR marker.
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Команды ПУАН 
+Прицел ПУАН  B 
+Лазерный дальномер-целеуказатель  L 
+ 
+ИК целеуказатель  R 
+Прибор ночного видения  N 
+Тепловизор  Z 
+Падлок объекта  Num_. 
+Снять падлок с объекта  Num_NumLock 
+Оранжевый маркерный дым  1 
+Красный маркерный дым  2 
+Зеленый маркерный дым  3 
+ 
+ 
+ 
+35  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+PUAN teams
+Sight PUAN B
+Laser rangefinder-designator L
+ 
+IR Target R
+Night vision device N
+Thermal Imager Z
+Padlock of the Num_ object.
+Remove padlock from object Num_NumLock
+Orange marker smoke 1
+Red marker smoke 2
+Green marker smoke 3
+ 
+ 
+ 
+35 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ПРИМЕНЕНИЕ АРТИЛЛЕРИИ И РСЗО  
+В режиме тактической карты у вас есть возможность ставить огневые задачи юнитам, 
+предназначенным для ведения огня с закрытых позиций (артиллерия, РСЗО и минометы). 
+Прежде всего выберите требуемый юнит/группу юнитов; значок выбранного юнита 
+окрасится в желтый цвет, а на панели команд отобразится кнопка ДОБАВИТЬ ЦЕЛЬ. 
+ 
+Рисунок 28. Вид командной панели после выбора РСЗО/артиллерии 
+Нажмите кнопку ДОБАВИТЬ ЦЕЛЬ, после чего наложите курсор на юнит/точку на карте и 
+нажмите левую кнопку мыши, чтобы поставить огневую задачу. Вы можете установить 
+размер зоны обстрела – область, в которую будут падать снаряды/ракеты, с помощью 
+ползунка РАДИУС ЦЕЛИ, расположенного на панели команд. Текущая зона обстрела 
+отображается окружностью с центром на цели. 
+Чтобы начать стрельбу, нажмите кнопку НАЧАТЬ СТРЕЛЬБУ. Чтобы прекратить огонь, 
+нажмите кнопку ЗАКОНЧИТЬ СТРЕЛЬБУ. 
+Примечание: все цели должны располагаться между окружностями минимальной и 
+максимальной дальности стрельбы. 
+После постановки огневой задачи и нажатия на кнопку НАЧАТЬ СТРЕЛЬБУ, на панели слева 
+запустится таймер отсчета до начала стрельбы. 
+После выдачи целеуказания, вы можете менять зону обстрела, перетаскивая ее мышью. 
+36  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+USE OF ARTILLERY AND MLRS
+In the tactical map mode, you have the opportunity to assign fire missions to units,
+designed for firing from closed positions (artillery, MLRS and mortars).
+First of all select the desired unit/group of units; selected unit icon
+will turn yellow and the ADD DESTINATION button will be displayed on the command bar.
+ 
+Figure 28. View of the command panel after selecting the MLRS / artillery
+Press the ADD DESTINATION button, then place the cursor on the unit/point on the map and
+press the left mouse button to set a fire mission. You can install
+the size of the firing zone - the area into which shells / missiles will fall, using
+TARGET RADIUS slider on the command bar. Current fire zone
+displayed as a circle centered on the target.
+To start shooting, press the START SHOOTING button. To stop the fire
+press the END SHOOTING button.
+Note: All targets must be between the minimum and
+maximum firing range.
+After setting a fire mission and pressing the START SHOOTING button, on the panel on the left
+the countdown timer will start before firing.
+After issuing target designation, you can change the firing zone by dragging it with the mouse.
+36 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Кроме кнопки ДОБАВИТЬ ЦЕЛЬ, для выбора цели можно использовать комбинацию [Left 
+Ctrl + Right Mouse Button]. Курсор мыши при этом должен находиться над целью. 
+Значек заданной 
+цели 
+ 
+ 
+Текущее 
+Радиус зоны  Панель 
+состояние юнита 
+обстрела  целеуказания 
+ 
+   
+  Время до начала     
+стрельбы секунд 
+ 
+ 
+ 
+Рисунок 29. Вид командой панели после постановки огневой задачи 
+Минимальная 
+дальность 
+ 
+Максимальная 
+ 
+дальность 
+ 
+ 
+ 
+Рисунок 30. Окружности минимальной и максимальной дальности стрельбы 
+37  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+In addition to the ADD DESTINATION button, you can use the [Left
+Ctrl+Right Mouse Button]. The mouse cursor must be over the target.
+Set icon
+goals
+ 
+ 
+Current
+Zone Radius Panel
+unit state
+shelling target designation
+ 
+   
+  Time to start
+firing seconds
+ 
+ 
+ 
+Figure 29. View of the panel by the team after setting the fire mission
+Minimum
+range
+ 
+Maximum
+ 
+range
+ 
+ 
+ 
+Figure 30. Minimum and maximum range circles
+37 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Стрельба с закрытых огневых позиций от первого лица  
+Кроме постановки задач артиллерии посредством тактической карты, вы также можете 
+управлять огнем САУ и РСЗО от первого лица. 
+Рассмотрим индикацию в данном режиме. 
+В верхней части экрана отображается шкала азимута, показывающая текущее положение 
+орудия по азимуту.  
+В центре правее отображается шкала дальности. Левее от шкалы дальности выводится 
+значение текущей дальности стрельбы. 
+Для выполнения точной стрельбы, прежде всего необходимо замерить дальность до цели 
+и определить ее азимут, используя тактическую карту. После этого требуется вручную 
+навести орудие по азимуту и дальности, затем произвести выстрел, нажав левую кнопку 
+мыши. 
+ 
+Шкала азимута 
+ 
+ 
+Шкала 
+дальности 
+ 
+ 
+Текущая 
+дальность 
+стрельбы 
+ 
+ 
+ 
+Рисунок 31. Наведение орудия от первого лица  
+ 
+38  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Shooting from closed firing positions from the first person
+In addition to assigning artillery missions through the tactical map, you can also
+control the fire of self-propelled guns and MLRS from the first person.
+Consider the indication in this mode.
+An azimuth scale is displayed at the top of the screen showing the current position
+guns in azimuth.
+The distance scale is displayed in the center to the right. To the left of the range scale is displayed
+the value of the current firing range.
+To perform accurate shooting, first of all, you need to measure the range to the target.
+and determine its bearing using a tactical map. After that, you need to manually
+point the gun in azimuth and range, then fire by pressing the left button
+mice.
+ 
+Azimuth scale
+ 
+ 
+Scale
+range
+ 
+ 
+Current
+range
+shooting
+ 
+ 
+ 
+Figure 31. Gun aiming in first person
+ 
+38 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+ИГРА ЗА КОМАНДУЮЩЕГО АВИАЦИЕЙ 
+Кроме управления наземными юнитами, вы также можете командовать авиацией 
+(самолетами и вертолетами). Командующий авиации может устанавливать маршруты и 
+задавать цели для авиагрупп, используя тактическую карту (в зависимости от выбранной 
+роли). 
+ 
+Установка маршрута полета 
+Аналогично установки маршрута для наземных юнитов, вы можете создавать и менять 
+маршруты для авиации. Прежде всего выберите авиационную группу, для который 
+требуется установить маршрут, затем нажмите кнопку ЗАДАТЬ МАРШРУТ. Далее, 
+установите требуемые точки маршрута на тактической карте, используя левую кнопку 
+мыши. После создания маршрута, нажмите кнопку ЗАДАТЬ МАРШРУТ, либо щелкните 
+правой кнопкой мыши по тактической карте. 
+По достижению конечной точки маршрута, ЛА будет барражировать в ее районе, ожидая 
+дальнейших указаний. 
+Вы также можете задавать скорость и высоту полета ЛА, используя соответствующие 
+ползунки на командной панели. 
+ 
+39  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+GAME FOR THE COMMANDER OF AVIATION
+In addition to controlling ground units, you can also command aircraft
+(airplanes and helicopters). The air commander may establish routes and
+set targets for air groups using a tactical map (depending on the selected
+roles).
+ 
+Setting the flight path
+Similar to setting a route for ground units, you can create and change
+aviation routes. First of all, select the aviation group for which
+want to set a route, then press the SET ROUTE button. Further,
+set the required waypoints on the tactical map using the left button
+mice. After creating a route, click the SET ROUTE button, or click
+right click on the tactical map.
+Upon reaching the end point of the route, the aircraft will patrol in its area, waiting
+further instructions.
+You can also set the speed and altitude of the aircraft using the corresponding
+sliders on the command bar.
+ 
+39 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Точка маршрута 
+ 
+ 
+Маршрут полета 
+ 
+ 
+Скорость полета  Высота полета  
+   
+   
+ 
+Рисунок 32. Создание маршрута полета  
+ 
+Целеуказание 
+Чтобы задать цель для авиагруппы, выберите авиагруппу, нажмите кнопку ДОБАВИТЬ 
+ЦЕЛЬ, затем выберите цель. Цель может быть воздушной, наземной или морской.  
+Обратите внимание: для поражения некоторых целей требуется определенный тип 
+оружия. К примеру, невозможно уничтожить танк с помощью противокорабельной ракеты 
+или пушечного вооружения (за исключением пушек специализированных 
+противотанковых самолетов, таких как А-10A/C). Если авиагруппа не имеет подходящего 
+оружия на борту, она не будет атаковать заданную цель, проигнорировав приказ.  
+Вы можете отменить атаку заданной цели, нажав на кнопку ПРЕКРАТИТЬ АТАКУ. 
+Уничтожив указанную цель, авиагруппа продолжит полет по заданному маршруту. 
+ 
+40  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Waypoint
+ 
+ 
+Flight route
+ 
+ 
+Flight speed Flight altitude
+   
+   
+ 
+Figure 32. Creating a flight route
+ 
+target designation
+To set a target for an air group, select the air group, click the ADD button
+TARGET, then select a destination. The target can be air, land or sea.
+Please note that some targets require a specific type to hit.
+weapons. For example, it is impossible to destroy a tank with an anti-ship missile.
+or cannon armament (with the exception of specialized cannons
+anti-tank aircraft such as the A-10A/C). If an air group does not have a suitable
+weapons on board, she will not attack the target by ignoring the order.
+You can cancel an attack on a given target by pressing the STOP ATTACK button.
+Having destroyed the specified target, the air group will continue flying along the specified route.
+ 
+40 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+Значок заданной 
+цели 
+ 
+ 
+Направление 
+захода на цель 
+ 
+ 
+  
+Рисунок 33. Целеуказание авиагруппе  
+   
+41  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+Set Icon
+goals
+ 
+ 
+Direction
+target approach
+ 
+ 
+  
+Figure 33. Target designation for the air group
+   
+41 EAGLE DYNAMICSDCS  ОГНЕВОЙ РУБЕЖ 
+ 
+©2013 THE FIGHTER COLLECTION. Все права защищены. 
+©2013 EAGLE DYNAMICS. Все права защищены. 
+42  EAGLE DYNAMICS 
+ 
+DCS FIRMING LINE
+ 
+©2013 THE FIGHTER COLLECTION. All rights reserved.
+©2013 EAGLE DYNAMICS. All rights reserved.
+42 EAGLE DYNAMICS
